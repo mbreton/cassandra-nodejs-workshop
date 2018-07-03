@@ -101,7 +101,7 @@ docker exec -ti cassandra-db bash
 Et utiliser la commande `nodetool` expliquée ici :
 <https://docs.datastax.com/en/cassandra/2.1/cassandra/tools/toolsStatus.html>
 <details>
-<summary><i>Découvrer la solution ici</i></summary>
+<summary><i>Découvrir la solution ici</i></summary>
 <p>
 <pre>
 nodetool status
@@ -132,7 +132,7 @@ La documentation ci-dessous, devrait vous aider :
 - <https://docs.datastax.com/en/archived/cql/3.0/cql/cql_reference/describe_r.html>
 
 <details>
-<summary><i>Découvrer la solution ici</i></summary>
+<summary><i>Découvrir la solution ici</i></summary>
 <p>
 <pre>
 oot@38eccacd2dd4:/# cqlsh
@@ -189,7 +189,7 @@ Grâce à la documentation ci-dessous, faite une requête permettant de lire tou
 
 <https://docs.datastax.com/en/cql/3.1/cql/cql_reference/select_r.html>
 <details>
-<summary><i>Découvrer la solution ici</i></summary>
+<summary><i>Découvrir la solution ici</i></summary>
 <p>
 <pre>
 SELECT * FROM workshop.characters;
@@ -215,7 +215,7 @@ discretion le choix de sa maison...)
 <https://docs.datastax.com/en/cql/3.1/cql/cql_reference/insert_r.html>
 
 <details>
-<summary><i>Découvrer la solution ici</i></summary>
+<summary><i>Découvrir la solution ici</i></summary>
 <p>
 <pre>
 INSERT INTO workshop.characters (id, name, house, allegiance) VALUES (uuid(), 'Jon Snow', 'Targaryen', 'Stark');
@@ -232,7 +232,7 @@ colone `house` est donc une parfaite candidate à la pose d'un index pour accél
 <https://docs.datastax.com/en/cql/3.3/cql/cql_reference/cqlCreateIndex.html>
 
 <details>
-<summary><i>Découvrer la solution ici</i></summary>
+<summary><i>Découvrir la solution ici</i></summary>
 <p>
 <pre>
 CREATE INDEX houses ON workshop.characters( house );
@@ -281,7 +281,7 @@ Pour vous aider dans votre tâche, vous pouvez jeter un oeil à la doc du driver
 TDD style, guys!
 
 <details>
-<summary><i>Découvrer la solution ici</i></summary>
+<summary><i>Découvrir la solution ici</i></summary>
 <p>
 <pre>
 const {types} = require('cassandra-driver');
